@@ -1,17 +1,19 @@
 import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
 import { Header } from './header/header';
 import { Footer } from './footer/footer';
+import { Main } from './carre/carre';
 
 @Component({
-  imports: [Header, Footer],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [NgClass, Header, Footer, Main],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  public couleurFond: string = 'white';
+  public classeFond: string = 'fond-blanc';
 
-  public changerCouleur(couleur: string): void {
-    this.couleurFond = couleur;
+  public changerFond(couleur: string): void {
+    this.classeFond = 'fond-' + couleur;
   }
 }

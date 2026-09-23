@@ -12,6 +12,6 @@ export class Header implements OnInit {
   @Output() text: EventEmitter<string> = new EventEmitter();
 
   ngOnInit(): void {
-    this.text.emit('je suis le output du header');
+    this.text.emit('');
   }
 }

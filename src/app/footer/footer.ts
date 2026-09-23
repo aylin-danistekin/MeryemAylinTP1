@@ -12,6 +12,6 @@ export class Footer implements OnInit {
   @Output() text: EventEmitter<string> = new EventEmitter();
 
   ngOnInit(): void {
-    this.text.emit('je suis le output du footer');
+    this.text.emit('');
   }
 }
