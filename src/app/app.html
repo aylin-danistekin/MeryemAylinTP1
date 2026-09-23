@@ -1,15 +1,16 @@
 <div [style.backgroundColor]="couleurFond" class="page-globale">
-  <app-header [prenoms]="mesPrenoms" (text)="headerOutput($event)"></app-header>
+  <app-header></app-header>
 
-<main class="centre">
-  <div class="carre">
-    <div class="windows-logo">
-      <div class="win-box rouge"></div>
-      <div class="win-box vert"></div>
-      <div class="win-box bleu"></div>
-      <div class="win-box jaune"></div>
+  <main class="centre">
+    <div class="carre">
+      <div class="windows-logo">
+        <div class="win-box rouge" (click)="changerCouleur('red')"></div>
+        <div class="win-box vert" (click)="changerCouleur('green')"></div>
+        <div class="win-box bleu" (click)="changerCouleur('blue')"></div>
+        <div class="win-box jaune" (click)="changerCouleur('yellow')"></div>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<app-footer (text)="footerOutput($event)"></app-footer>
+  <app-footer></app-footer>
+</div>
