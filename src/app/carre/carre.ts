@@ -1,10 +1,10 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
+  selector: 'app-carre',
   imports: [],
-  templateUrl: './main.html',
-  styleUrl: './main.css'
+  templateUrl: './carre.html',
+  styleUrl: './carre.css'
 })
 export class Main {
   @Output() public couleurSelect = new EventEmitter<string>();

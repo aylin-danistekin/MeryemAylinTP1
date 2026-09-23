@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   imports: [NgClass],
@@ -7,11 +7,6 @@ import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
   styleUrl: './header.css',
   templateUrl: './header.html',
 })
-export class Header implements OnInit {
-  @Input() prenoms: string = "";
-  @Output() text: EventEmitter<string> = new EventEmitter();
+export class Header {
 
-  ngOnInit(): void {
-    this.text.emit('');
-  }
 }

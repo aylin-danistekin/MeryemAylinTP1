@@ -1,5 +1,5 @@
 import { NgClass } from '@angular/common';
-import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   imports: [NgClass],
@@ -7,11 +7,5 @@ import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
   styleUrl: './footer.css',
   templateUrl: './footer.html',
 })
-export class Footer implements OnInit {
-  @Input() color: string = "";
-  @Output() text: EventEmitter<string> = new EventEmitter();
-
-  ngOnInit(): void {
-    this.text.emit('');
-  }
+export class Footer{
 }
